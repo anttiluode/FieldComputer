@@ -1,0 +1,4036 @@
+{
+  "schema_version": 1,
+  "run_kind": "frozen_full",
+  "seeds": [
+    7,
+    19,
+    31,
+    43,
+    59
+  ],
+  "counts_per_seed": {
+    "train": 256,
+    "validation": 128,
+    "test": 256
+  },
+  "numpy_version": "2.3.5",
+  "seconds": 322.30582510500017,
+  "source_sha256": {
+    "PROTOCOL.md": "4e2581ec97ac9c1561e71440d7baa45f8d0ef1965a799a16d2da7aff6de0de42",
+    "archive/scout_com_instanton2.py": "03d05206fc2bd1402d672d5dc14a0b599a6f4ddb0d6ba940935de9400caea0b6",
+    "fieldcomputer/dynamics.py": "69145b1d5d7e663bd93ebb879138c031fe4cbfcd8edb376bc01624926afdaffd",
+    "fieldcomputer/experiment.py": "1652fdd2bc13e96f747bc86b36930f10d71561157158dea0280aea90e2f8a0d3"
+  },
+  "fidelity": {
+    "pass": true,
+    "max_abs_error": 9.43689570931383e-16,
+    "environments": 5,
+    "unforced_steps_per_environment": 20
+  },
+  "gates": {
+    "G0": {
+      "pass": true,
+      "meaning": "Numerical archive fidelity and finite runs"
+    },
+    "G1": {
+      "pass": true,
+      "accuracy": 1.0,
+      "min_seed_accuracy": 1.0,
+      "meaning": "Readable first-pulse memory"
+    },
+    "G2": {
+      "pass": true,
+      "accuracy": 0.9953125,
+      "linear_control_accuracy": 0.50546875,
+      "meaning": "Nonlinear delayed parity"
+    },
+    "G3": {
+      "pass": true,
+      "accuracy": 0.88046875,
+      "linear_control_accuracy": 0.51484375,
+      "meaning": "History-conditioned incremental probe response"
+    },
+    "G4": {
+      "pass": false,
+      "difference": 0.0,
+      "best_alternative": "driven",
+      "alternative_scores": {
+        "driven": 1.0,
+        "uncoupled": 1.0,
+        "linear": 0.983984375,
+        "leaky": 1.0,
+        "delay_pca": 0.99921875
+      },
+      "positive_seed_count": 0,
+      "meaning": "Advantage over alternative computers with the same reader family"
+    }
+  },
+  "diagnostics": [
+    {
+      "seed": 7,
+      "model": "reciprocal",
+      "clamps_passive": 0,
+      "clamps_probed": 0,
+      "energy_rescales": 0,
+      "max_abs": 8.209979649950942,
+      "finite": true,
+      "real_state_size": 2318,
+      "observed_features": 16,
+      "incremental_rms": 0.09278551475272524
+    },
+    {
+      "seed": 7,
+      "model": "driven",
+      "clamps_passive": 0,
+      "clamps_probed": 0,
+      "energy_rescales": 0,
+      "max_abs": 8.18065300130973,
+      "finite": true,
+      "real_state_size": 2318,
+      "observed_features": 16,
+      "incremental_rms": 0.09283397933107067
+    },
+    {
+      "seed": 7,
+      "model": "uncoupled",
+      "clamps_passive": 0,
+      "clamps_probed": 0,
+      "energy_rescales": 0,
+      "max_abs": 8.190870771670248,
+      "finite": true,
+      "real_state_size": 2318,
+      "observed_features": 16,
+      "incremental_rms": 0.09281271251132606
+    },
+    {
+      "seed": 7,
+      "model": "linear",
+      "clamps_passive": 0,
+      "clamps_probed": 0,
+      "energy_rescales": 0,
+      "max_abs": 11.249962908153073,
+      "finite": true,
+      "real_state_size": 2318,
+      "observed_features": 16,
+      "incremental_rms": 0.10737299279157629
+    },
+    {
+      "seed": 7,
+      "model": "erased",
+      "clamps_passive": 0,
+      "clamps_probed": 0,
+      "energy_rescales": 0,
+      "max_abs": 1.5444078953913478,
+      "finite": true,
+      "real_state_size": 2318,
+      "observed_features": 16,
+      "incremental_rms": 0.10790272868879053
+    },
+    {
+      "seed": 19,
+      "model": "reciprocal",
+      "clamps_passive": 0,
+      "clamps_probed": 0,
+      "energy_rescales": 0,
+      "max_abs": 7.09722023206694,
+      "finite": true,
+      "real_state_size": 2318,
+      "observed_features": 16,
+      "incremental_rms": 0.09151988703126085
+    },
+    {
+      "seed": 19,
+      "model": "driven",
+      "clamps_passive": 0,
+      "clamps_probed": 0,
+      "energy_rescales": 0,
+      "max_abs": 7.078100177387956,
+      "finite": true,
+      "real_state_size": 2318,
+      "observed_features": 16,
+      "incremental_rms": 0.09161531006764745
+    },
+    {
+      "seed": 19,
+      "model": "uncoupled",
+      "clamps_passive": 0,
+      "clamps_probed": 0,
+      "energy_rescales": 0,
+      "max_abs": 7.089216499249859,
+      "finite": true,
+      "real_state_size": 2318,
+      "observed_features": 16,
+      "incremental_rms": 0.09157767862585171
+    },
+    {
+      "seed": 19,
+      "model": "linear",
+      "clamps_passive": 0,
+      "clamps_probed": 0,
+      "energy_rescales": 0,
+      "max_abs": 11.07198147755548,
+      "finite": true,
+      "real_state_size": 2318,
+      "observed_features": 16,
+      "incremental_rms": 0.10739933434330172
+    },
+    {
+      "seed": 19,
+      "model": "erased",
+      "clamps_passive": 0,
+      "clamps_probed": 0,
+      "energy_rescales": 0,
+      "max_abs": 1.5097406892517296,
+      "finite": true,
+      "real_state_size": 2318,
+      "observed_features": 16,
+      "incremental_rms": 0.10753740333194065
+    },
+    {
+      "seed": 31,
+      "model": "reciprocal",
+      "clamps_passive": 0,
+      "clamps_probed": 0,
+      "energy_rescales": 0,
+      "max_abs": 5.002980978925442,
+      "finite": true,
+      "real_state_size": 2318,
+      "observed_features": 16,
+      "incremental_rms": 0.09746828174557143
+    },
+    {
+      "seed": 31,
+      "model": "driven",
+      "clamps_passive": 0,
+      "clamps_probed": 0,
+      "energy_rescales": 0,
+      "max_abs": 5.019427205891033,
+      "finite": true,
+      "real_state_size": 2318,
+      "observed_features": 16,
+      "incremental_rms": 0.09744840373400057
+    },
+    {
+      "seed": 31,
+      "model": "uncoupled",
+      "clamps_passive": 0,
+      "clamps_probed": 0,
+      "energy_rescales": 0,
+      "max_abs": 5.030521384317227,
+      "finite": true,
+      "real_state_size": 2318,
+      "observed_features": 16,
+      "incremental_rms": 0.09742274944291009
+    },
+    {
+      "seed": 31,
+      "model": "linear",
+      "clamps_passive": 0,
+      "clamps_probed": 0,
+      "energy_rescales": 0,
+      "max_abs": 9.233006834143735,
+      "finite": true,
+      "real_state_size": 2318,
+      "observed_features": 16,
+      "incremental_rms": 0.10738479548870025
+    },
+    {
+      "seed": 31,
+      "model": "erased",
+      "clamps_passive": 0,
+      "clamps_probed": 0,
+      "energy_rescales": 0,
+      "max_abs": 1.2665361841148122,
+      "finite": true,
+      "real_state_size": 2318,
+      "observed_features": 16,
+      "incremental_rms": 0.10560913420503018
+    },
+    {
+      "seed": 43,
+      "model": "reciprocal",
+      "clamps_passive": 0,
+      "clamps_probed": 0,
+      "energy_rescales": 0,
+      "max_abs": 6.3454718177636025,
+      "finite": true,
+      "real_state_size": 2318,
+      "observed_features": 16,
+      "incremental_rms": 0.09268642127317044
+    },
+    {
+      "seed": 43,
+      "model": "driven",
+      "clamps_passive": 0,
+      "clamps_probed": 0,
+      "energy_rescales": 0,
+      "max_abs": 6.338173649684341,
+      "finite": true,
+      "real_state_size": 2318,
+      "observed_features": 16,
+      "incremental_rms": 0.09272912988272922
+    },
+    {
+      "seed": 43,
+      "model": "uncoupled",
+      "clamps_passive": 0,
+      "clamps_probed": 0,
+      "energy_rescales": 0,
+      "max_abs": 6.3492145311162185,
+      "finite": true,
+      "real_state_size": 2318,
+      "observed_features": 16,
+      "incremental_rms": 0.09269357463829683
+    },
+    {
+      "seed": 43,
+      "model": "linear",
+      "clamps_passive": 0,
+      "clamps_probed": 0,
+      "energy_rescales": 0,
+      "max_abs": 10.77487798379548,
+      "finite": true,
+      "real_state_size": 2318,
+      "observed_features": 16,
+      "incremental_rms": 0.10741129826606718
+    },
+    {
+      "seed": 43,
+      "model": "erased",
+      "clamps_passive": 0,
+      "clamps_probed": 0,
+      "energy_rescales": 0,
+      "max_abs": 1.4768772503671037,
+      "finite": true,
+      "real_state_size": 2318,
+      "observed_features": 16,
+      "incremental_rms": 0.10720380152962075
+    },
+    {
+      "seed": 59,
+      "model": "reciprocal",
+      "clamps_passive": 0,
+      "clamps_probed": 0,
+      "energy_rescales": 0,
+      "max_abs": 8.21793506851932,
+      "finite": true,
+      "real_state_size": 2318,
+      "observed_features": 16,
+      "incremental_rms": 0.09287022392188873
+    },
+    {
+      "seed": 59,
+      "model": "driven",
+      "clamps_passive": 0,
+      "clamps_probed": 0,
+      "energy_rescales": 0,
+      "max_abs": 8.217578262555305,
+      "finite": true,
+      "real_state_size": 2318,
+      "observed_features": 16,
+      "incremental_rms": 0.09287481223536974
+    },
+    {
+      "seed": 59,
+      "model": "uncoupled",
+      "clamps_passive": 0,
+      "clamps_probed": 0,
+      "energy_rescales": 0,
+      "max_abs": 8.227989721352646,
+      "finite": true,
+      "real_state_size": 2318,
+      "observed_features": 16,
+      "incremental_rms": 0.09285011649258078
+    },
+    {
+      "seed": 59,
+      "model": "linear",
+      "clamps_passive": 0,
+      "clamps_probed": 0,
+      "energy_rescales": 0,
+      "max_abs": 11.345166263827442,
+      "finite": true,
+      "real_state_size": 2318,
+      "observed_features": 16,
+      "incremental_rms": 0.10740938635876492
+    },
+    {
+      "seed": 59,
+      "model": "erased",
+      "clamps_passive": 0,
+      "clamps_probed": 0,
+      "energy_rescales": 0,
+      "max_abs": 1.542184904291076,
+      "finite": true,
+      "real_state_size": 2318,
+      "observed_features": 16,
+      "incremental_rms": 0.10794339571225608
+    }
+  ],
+  "seed_results": [
+    {
+      "seed": 7,
+      "model": "reciprocal",
+      "observation": "passive",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.03808465061573174,
+          "alpha": 0.0001
+        },
+        "parity": {
+          "accuracy": 0.99609375,
+          "correct": 255,
+          "test_count": 256,
+          "validation_accuracy": 0.9921875,
+          "mse": 0.0930392393763875,
+          "alpha": 1e-05
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 7,
+      "model": "reciprocal",
+      "observation": "passive",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.014854601982128294,
+          "alpha": 0.001
+        },
+        "parity": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.03270261097603742,
+          "alpha": 1e-05
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 7,
+      "model": "reciprocal",
+      "observation": "incremental",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.94921875,
+          "correct": 243,
+          "test_count": 256,
+          "validation_accuracy": 0.984375,
+          "mse": 0.21564166836371162,
+          "alpha": 0.01
+        },
+        "parity": {
+          "accuracy": 0.83984375,
+          "correct": 215,
+          "test_count": 256,
+          "validation_accuracy": 0.859375,
+          "mse": 0.49845543467148273,
+          "alpha": 0.01
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 7,
+      "model": "reciprocal",
+      "observation": "incremental",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.06280621561961619,
+          "alpha": 0.1
+        },
+        "parity": {
+          "accuracy": 0.98046875,
+          "correct": 251,
+          "test_count": 256,
+          "validation_accuracy": 0.9921875,
+          "mse": 0.1537906965521536,
+          "alpha": 0.01
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 7,
+      "model": "driven",
+      "observation": "passive",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.037958892154033516,
+          "alpha": 0.0001
+        },
+        "parity": {
+          "accuracy": 0.99609375,
+          "correct": 255,
+          "test_count": 256,
+          "validation_accuracy": 0.9921875,
+          "mse": 0.09420919686018935,
+          "alpha": 1e-05
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 7,
+      "model": "driven",
+      "observation": "passive",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.014983996335520096,
+          "alpha": 0.001
+        },
+        "parity": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.03305711711972277,
+          "alpha": 1e-05
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 7,
+      "model": "driven",
+      "observation": "incremental",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.94921875,
+          "correct": 243,
+          "test_count": 256,
+          "validation_accuracy": 0.984375,
+          "mse": 0.21877603829903275,
+          "alpha": 0.01
+        },
+        "parity": {
+          "accuracy": 0.83984375,
+          "correct": 215,
+          "test_count": 256,
+          "validation_accuracy": 0.859375,
+          "mse": 0.49418609861797136,
+          "alpha": 0.01
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 7,
+      "model": "driven",
+      "observation": "incremental",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.06486996229349937,
+          "alpha": 0.1
+        },
+        "parity": {
+          "accuracy": 0.98046875,
+          "correct": 251,
+          "test_count": 256,
+          "validation_accuracy": 0.9921875,
+          "mse": 0.1559819216631907,
+          "alpha": 0.01
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 7,
+      "model": "uncoupled",
+      "observation": "passive",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.038885931796025716,
+          "alpha": 0.0001
+        },
+        "parity": {
+          "accuracy": 0.99609375,
+          "correct": 255,
+          "test_count": 256,
+          "validation_accuracy": 0.9921875,
+          "mse": 0.09378346759203138,
+          "alpha": 1e-05
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 7,
+      "model": "uncoupled",
+      "observation": "passive",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.015083852003618944,
+          "alpha": 0.001
+        },
+        "parity": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.03225684881228631,
+          "alpha": 1e-05
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 7,
+      "model": "uncoupled",
+      "observation": "incremental",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.94921875,
+          "correct": 243,
+          "test_count": 256,
+          "validation_accuracy": 0.984375,
+          "mse": 0.21889210488042896,
+          "alpha": 0.01
+        },
+        "parity": {
+          "accuracy": 0.83203125,
+          "correct": 213,
+          "test_count": 256,
+          "validation_accuracy": 0.859375,
+          "mse": 0.4990772620033404,
+          "alpha": 0.01
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 7,
+      "model": "uncoupled",
+      "observation": "incremental",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.06402458383477576,
+          "alpha": 0.1
+        },
+        "parity": {
+          "accuracy": 0.98046875,
+          "correct": 251,
+          "test_count": 256,
+          "validation_accuracy": 0.9921875,
+          "mse": 0.15549946650309132,
+          "alpha": 0.01
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 7,
+      "model": "linear",
+      "observation": "passive",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.05861477725163953,
+          "alpha": 1e-05
+        },
+        "parity": {
+          "accuracy": 0.5078125,
+          "correct": 130,
+          "test_count": 256,
+          "validation_accuracy": 0.5390625,
+          "mse": 1.0194120053162554,
+          "alpha": 1e-05
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 7,
+      "model": "linear",
+      "observation": "passive",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.07012342776597169,
+          "alpha": 1e-05
+        },
+        "parity": {
+          "accuracy": 0.9609375,
+          "correct": 246,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.24175535723051053,
+          "alpha": 1e-05
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 7,
+      "model": "linear",
+      "observation": "incremental",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.51953125,
+          "correct": 133,
+          "test_count": 256,
+          "validation_accuracy": 0.4921875,
+          "mse": 1.0037736648705722,
+          "alpha": 1.0
+        },
+        "parity": {
+          "accuracy": 0.5390625,
+          "correct": 138,
+          "test_count": 256,
+          "validation_accuracy": 0.5078125,
+          "mse": 1.005349541044783,
+          "alpha": 0.1
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 7,
+      "model": "linear",
+      "observation": "incremental",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.48828125,
+          "correct": 125,
+          "test_count": 256,
+          "validation_accuracy": 0.5546875,
+          "mse": 1.0842532584892695,
+          "alpha": 1.0
+        },
+        "parity": {
+          "accuracy": 0.4765625,
+          "correct": 122,
+          "test_count": 256,
+          "validation_accuracy": 0.4765625,
+          "mse": 1.0010622561471432,
+          "alpha": 100.0
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 7,
+      "model": "leaky",
+      "observation": "passive",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.05804981607580005,
+          "alpha": 1e-05
+        },
+        "parity": {
+          "accuracy": 0.5,
+          "correct": 128,
+          "test_count": 256,
+          "validation_accuracy": 0.546875,
+          "mse": 0.9963153196910282,
+          "alpha": 0.0001
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 16
+    },
+    {
+      "seed": 7,
+      "model": "leaky",
+      "observation": "passive",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.06216396967465454,
+          "alpha": 1e-05
+        },
+        "parity": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.1110899667172175,
+          "alpha": 1e-05
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 16
+    },
+    {
+      "seed": 7,
+      "model": "delay_pca",
+      "observation": "passive",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.057832264930286856,
+          "alpha": 1e-05
+        },
+        "parity": {
+          "accuracy": 0.48828125,
+          "correct": 125,
+          "test_count": 256,
+          "validation_accuracy": 0.4765625,
+          "mse": 1.0000902130872458,
+          "alpha": 100.0
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 7,
+      "model": "delay_pca",
+      "observation": "passive",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.10743969907932253,
+          "alpha": 0.1
+        },
+        "parity": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.14187651332104056,
+          "alpha": 0.1
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 7,
+      "model": "erased",
+      "observation": "probed",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.49609375,
+          "correct": 127,
+          "test_count": 256,
+          "validation_accuracy": 0.546875,
+          "mse": 0.9988692754328701,
+          "alpha": 10.0
+        },
+        "parity": {
+          "accuracy": 0.5625,
+          "correct": 144,
+          "test_count": 256,
+          "validation_accuracy": 0.5,
+          "mse": 1.0204430943717548,
+          "alpha": 0.1
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 7,
+      "model": "erased",
+      "observation": "probed",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.484375,
+          "correct": 124,
+          "test_count": 256,
+          "validation_accuracy": 0.5234375,
+          "mse": 1.0003769088459817,
+          "alpha": 100.0
+        },
+        "parity": {
+          "accuracy": 0.5703125,
+          "correct": 146,
+          "test_count": 256,
+          "validation_accuracy": 0.5390625,
+          "mse": 3.114219884241438,
+          "alpha": 0.001
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 7,
+      "model": "shuffled_labels",
+      "observation": "passive",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.94140625,
+          "correct": 241,
+          "test_count": 256,
+          "validation_accuracy": 0.5546875,
+          "mse": 0.8843629161057811,
+          "alpha": 0.01
+        },
+        "parity": {
+          "accuracy": 0.5625,
+          "correct": 144,
+          "test_count": 256,
+          "validation_accuracy": 0.5703125,
+          "mse": 0.9696472241374758,
+          "alpha": 0.001
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 7,
+      "model": "shuffled_labels",
+      "observation": "passive",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.82421875,
+          "correct": 211,
+          "test_count": 256,
+          "validation_accuracy": 0.5390625,
+          "mse": 0.9213915236307684,
+          "alpha": 1.0
+        },
+        "parity": {
+          "accuracy": 0.94921875,
+          "correct": 243,
+          "test_count": 256,
+          "validation_accuracy": 0.5703125,
+          "mse": 0.9798568963307603,
+          "alpha": 100.0
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 19,
+      "model": "reciprocal",
+      "observation": "passive",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.03714406212430478,
+          "alpha": 1e-05
+        },
+        "parity": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.06735080542696842,
+          "alpha": 1e-05
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 19,
+      "model": "reciprocal",
+      "observation": "passive",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.006763332746650358,
+          "alpha": 1e-05
+        },
+        "parity": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.031132981285142483,
+          "alpha": 1e-05
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 19,
+      "model": "reciprocal",
+      "observation": "incremental",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.9765625,
+          "correct": 250,
+          "test_count": 256,
+          "validation_accuracy": 0.984375,
+          "mse": 0.20141522070277612,
+          "alpha": 0.01
+        },
+        "parity": {
+          "accuracy": 0.92578125,
+          "correct": 237,
+          "test_count": 256,
+          "validation_accuracy": 0.9140625,
+          "mse": 0.3281450254115757,
+          "alpha": 1e-05
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 19,
+      "model": "reciprocal",
+      "observation": "incremental",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.0899984887009003,
+          "alpha": 0.01
+        },
+        "parity": {
+          "accuracy": 0.984375,
+          "correct": 252,
+          "test_count": 256,
+          "validation_accuracy": 0.9921875,
+          "mse": 0.15271213182411064,
+          "alpha": 1.0
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 19,
+      "model": "driven",
+      "observation": "passive",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.037362893936360254,
+          "alpha": 1e-05
+        },
+        "parity": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.06789539308721437,
+          "alpha": 1e-05
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 19,
+      "model": "driven",
+      "observation": "passive",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.00677863162595263,
+          "alpha": 1e-05
+        },
+        "parity": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.03116822902548584,
+          "alpha": 1e-05
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 19,
+      "model": "driven",
+      "observation": "incremental",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.96875,
+          "correct": 248,
+          "test_count": 256,
+          "validation_accuracy": 0.984375,
+          "mse": 0.2003379691609417,
+          "alpha": 0.01
+        },
+        "parity": {
+          "accuracy": 0.92578125,
+          "correct": 237,
+          "test_count": 256,
+          "validation_accuracy": 0.9140625,
+          "mse": 0.33003364737626595,
+          "alpha": 1e-05
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 19,
+      "model": "driven",
+      "observation": "incremental",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.09079335418858438,
+          "alpha": 0.01
+        },
+        "parity": {
+          "accuracy": 0.984375,
+          "correct": 252,
+          "test_count": 256,
+          "validation_accuracy": 0.9921875,
+          "mse": 0.15241859129209634,
+          "alpha": 1.0
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 19,
+      "model": "uncoupled",
+      "observation": "passive",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.03764918848560432,
+          "alpha": 1e-05
+        },
+        "parity": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.06823050164581834,
+          "alpha": 1e-05
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 19,
+      "model": "uncoupled",
+      "observation": "passive",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.00683768868830835,
+          "alpha": 1e-05
+        },
+        "parity": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.031091203824329637,
+          "alpha": 1e-05
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 19,
+      "model": "uncoupled",
+      "observation": "incremental",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.9765625,
+          "correct": 250,
+          "test_count": 256,
+          "validation_accuracy": 0.984375,
+          "mse": 0.19944379720476346,
+          "alpha": 0.01
+        },
+        "parity": {
+          "accuracy": 0.92578125,
+          "correct": 237,
+          "test_count": 256,
+          "validation_accuracy": 0.9140625,
+          "mse": 0.33020284784712495,
+          "alpha": 1e-05
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 19,
+      "model": "uncoupled",
+      "observation": "incremental",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.09058885539063066,
+          "alpha": 0.01
+        },
+        "parity": {
+          "accuracy": 0.984375,
+          "correct": 252,
+          "test_count": 256,
+          "validation_accuracy": 0.9921875,
+          "mse": 0.15276983240634545,
+          "alpha": 1.0
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 19,
+      "model": "linear",
+      "observation": "passive",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.05551770716037984,
+          "alpha": 1e-05
+        },
+        "parity": {
+          "accuracy": 0.4921875,
+          "correct": 126,
+          "test_count": 256,
+          "validation_accuracy": 0.6171875,
+          "mse": 1.0108798887832577,
+          "alpha": 0.01
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 19,
+      "model": "linear",
+      "observation": "passive",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.07813559677920144,
+          "alpha": 1e-05
+        },
+        "parity": {
+          "accuracy": 0.98046875,
+          "correct": 251,
+          "test_count": 256,
+          "validation_accuracy": 0.9765625,
+          "mse": 0.24284303057402917,
+          "alpha": 1e-05
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 19,
+      "model": "linear",
+      "observation": "incremental",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.4609375,
+          "correct": 118,
+          "test_count": 256,
+          "validation_accuracy": 0.5078125,
+          "mse": 1.0851420663147866,
+          "alpha": 0.1
+        },
+        "parity": {
+          "accuracy": 0.48828125,
+          "correct": 125,
+          "test_count": 256,
+          "validation_accuracy": 0.546875,
+          "mse": 1.0153364858895542,
+          "alpha": 1.0
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 19,
+      "model": "linear",
+      "observation": "incremental",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.515625,
+          "correct": 132,
+          "test_count": 256,
+          "validation_accuracy": 0.5078125,
+          "mse": 1.0717595228240286,
+          "alpha": 1.0
+        },
+        "parity": {
+          "accuracy": 0.5078125,
+          "correct": 130,
+          "test_count": 256,
+          "validation_accuracy": 0.5234375,
+          "mse": 2.903387166084574,
+          "alpha": 0.001
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 19,
+      "model": "leaky",
+      "observation": "passive",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.05283371887814567,
+          "alpha": 1e-05
+        },
+        "parity": {
+          "accuracy": 0.49609375,
+          "correct": 127,
+          "test_count": 256,
+          "validation_accuracy": 0.53125,
+          "mse": 1.0013706556991477,
+          "alpha": 0.001
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 16
+    },
+    {
+      "seed": 19,
+      "model": "leaky",
+      "observation": "passive",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.053726372269532044,
+          "alpha": 1e-05
+        },
+        "parity": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.09846478255382728,
+          "alpha": 1e-05
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 16
+    },
+    {
+      "seed": 19,
+      "model": "delay_pca",
+      "observation": "passive",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.05043202475939919,
+          "alpha": 1e-05
+        },
+        "parity": {
+          "accuracy": 0.5234375,
+          "correct": 134,
+          "test_count": 256,
+          "validation_accuracy": 0.515625,
+          "mse": 0.9997383807452075,
+          "alpha": 100.0
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 19,
+      "model": "delay_pca",
+      "observation": "passive",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.09726743659970313,
+          "alpha": 0.1
+        },
+        "parity": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.156310406729395,
+          "alpha": 0.1
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 19,
+      "model": "erased",
+      "observation": "probed",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.45703125,
+          "correct": 117,
+          "test_count": 256,
+          "validation_accuracy": 0.53125,
+          "mse": 1.0003995576112992,
+          "alpha": 100.0
+        },
+        "parity": {
+          "accuracy": 0.5078125,
+          "correct": 130,
+          "test_count": 256,
+          "validation_accuracy": 0.5,
+          "mse": 0.9997857093268971,
+          "alpha": 100.0
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 19,
+      "model": "erased",
+      "observation": "probed",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.41796875,
+          "correct": 107,
+          "test_count": 256,
+          "validation_accuracy": 0.4296875,
+          "mse": 3.5878206482430706,
+          "alpha": 0.001
+        },
+        "parity": {
+          "accuracy": 0.52734375,
+          "correct": 135,
+          "test_count": 256,
+          "validation_accuracy": 0.5625,
+          "mse": 0.9992493387727144,
+          "alpha": 100.0
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 19,
+      "model": "shuffled_labels",
+      "observation": "passive",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.42578125,
+          "correct": 109,
+          "test_count": 256,
+          "validation_accuracy": 0.5390625,
+          "mse": 1.0246991087855664,
+          "alpha": 0.1
+        },
+        "parity": {
+          "accuracy": 0.48046875,
+          "correct": 123,
+          "test_count": 256,
+          "validation_accuracy": 0.46875,
+          "mse": 1.0391504363640642,
+          "alpha": 1e-05
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 19,
+      "model": "shuffled_labels",
+      "observation": "passive",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.515625,
+          "correct": 132,
+          "test_count": 256,
+          "validation_accuracy": 0.53125,
+          "mse": 1.0190770038591914,
+          "alpha": 0.001
+        },
+        "parity": {
+          "accuracy": 0.4375,
+          "correct": 112,
+          "test_count": 256,
+          "validation_accuracy": 0.5078125,
+          "mse": 1.1466239052773866,
+          "alpha": 1e-05
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 31,
+      "model": "reciprocal",
+      "observation": "passive",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.03568686600834009,
+          "alpha": 1e-05
+        },
+        "parity": {
+          "accuracy": 0.99609375,
+          "correct": 255,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.09190780279359598,
+          "alpha": 1e-05
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 31,
+      "model": "reciprocal",
+      "observation": "passive",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.008180636162962109,
+          "alpha": 1e-05
+        },
+        "parity": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.03398088826970343,
+          "alpha": 1e-05
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 31,
+      "model": "reciprocal",
+      "observation": "incremental",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.87890625,
+          "correct": 225,
+          "test_count": 256,
+          "validation_accuracy": 0.90625,
+          "mse": 0.4233244072919339,
+          "alpha": 0.01
+        },
+        "parity": {
+          "accuracy": 0.890625,
+          "correct": 228,
+          "test_count": 256,
+          "validation_accuracy": 0.8671875,
+          "mse": 0.43296001095143766,
+          "alpha": 0.1
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 31,
+      "model": "reciprocal",
+      "observation": "incremental",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.91796875,
+          "correct": 235,
+          "test_count": 256,
+          "validation_accuracy": 0.9453125,
+          "mse": 0.3246852179275189,
+          "alpha": 0.1
+        },
+        "parity": {
+          "accuracy": 0.96484375,
+          "correct": 247,
+          "test_count": 256,
+          "validation_accuracy": 0.953125,
+          "mse": 0.17914581099724103,
+          "alpha": 0.1
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 31,
+      "model": "driven",
+      "observation": "passive",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.03573280662689765,
+          "alpha": 1e-05
+        },
+        "parity": {
+          "accuracy": 0.99609375,
+          "correct": 255,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.09174513487994496,
+          "alpha": 1e-05
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 31,
+      "model": "driven",
+      "observation": "passive",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.008182971321674611,
+          "alpha": 1e-05
+        },
+        "parity": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.03402449116817404,
+          "alpha": 1e-05
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 31,
+      "model": "driven",
+      "observation": "incremental",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.8828125,
+          "correct": 226,
+          "test_count": 256,
+          "validation_accuracy": 0.90625,
+          "mse": 0.4215050672529679,
+          "alpha": 0.01
+        },
+        "parity": {
+          "accuracy": 0.89453125,
+          "correct": 229,
+          "test_count": 256,
+          "validation_accuracy": 0.8671875,
+          "mse": 0.43410371853039575,
+          "alpha": 0.1
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 31,
+      "model": "driven",
+      "observation": "incremental",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.91796875,
+          "correct": 235,
+          "test_count": 256,
+          "validation_accuracy": 0.9453125,
+          "mse": 0.31924475350521775,
+          "alpha": 0.1
+        },
+        "parity": {
+          "accuracy": 0.96484375,
+          "correct": 247,
+          "test_count": 256,
+          "validation_accuracy": 0.953125,
+          "mse": 0.18010892546838536,
+          "alpha": 0.1
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 31,
+      "model": "uncoupled",
+      "observation": "passive",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.03497299637793816,
+          "alpha": 1e-05
+        },
+        "parity": {
+          "accuracy": 0.99609375,
+          "correct": 255,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.09115134025858829,
+          "alpha": 1e-05
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 31,
+      "model": "uncoupled",
+      "observation": "passive",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.00810762610169923,
+          "alpha": 1e-05
+        },
+        "parity": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.03388886203727706,
+          "alpha": 1e-05
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 31,
+      "model": "uncoupled",
+      "observation": "incremental",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.88671875,
+          "correct": 227,
+          "test_count": 256,
+          "validation_accuracy": 0.90625,
+          "mse": 0.4174021372225848,
+          "alpha": 0.01
+        },
+        "parity": {
+          "accuracy": 0.90625,
+          "correct": 232,
+          "test_count": 256,
+          "validation_accuracy": 0.8671875,
+          "mse": 0.4791079004104687,
+          "alpha": 1.0
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 31,
+      "model": "uncoupled",
+      "observation": "incremental",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.91796875,
+          "correct": 235,
+          "test_count": 256,
+          "validation_accuracy": 0.9453125,
+          "mse": 0.3166173339334205,
+          "alpha": 0.1
+        },
+        "parity": {
+          "accuracy": 0.96484375,
+          "correct": 247,
+          "test_count": 256,
+          "validation_accuracy": 0.953125,
+          "mse": 0.17943623035876677,
+          "alpha": 0.1
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 31,
+      "model": "linear",
+      "observation": "passive",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.064097757121069,
+          "alpha": 1e-05
+        },
+        "parity": {
+          "accuracy": 0.53515625,
+          "correct": 137,
+          "test_count": 256,
+          "validation_accuracy": 0.5625,
+          "mse": 0.997499666769305,
+          "alpha": 1.0
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 31,
+      "model": "linear",
+      "observation": "passive",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.08168060206210379,
+          "alpha": 1e-05
+        },
+        "parity": {
+          "accuracy": 0.9765625,
+          "correct": 250,
+          "test_count": 256,
+          "validation_accuracy": 0.953125,
+          "mse": 0.24683880190063606,
+          "alpha": 1e-05
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 31,
+      "model": "linear",
+      "observation": "incremental",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.54296875,
+          "correct": 139,
+          "test_count": 256,
+          "validation_accuracy": 0.484375,
+          "mse": 0.9960636480269229,
+          "alpha": 10.0
+        },
+        "parity": {
+          "accuracy": 0.546875,
+          "correct": 140,
+          "test_count": 256,
+          "validation_accuracy": 0.546875,
+          "mse": 1.0398105416025376,
+          "alpha": 0.1
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 31,
+      "model": "linear",
+      "observation": "incremental",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.5390625,
+          "correct": 138,
+          "test_count": 256,
+          "validation_accuracy": 0.5234375,
+          "mse": 1.081688364920851,
+          "alpha": 1.0
+        },
+        "parity": {
+          "accuracy": 0.4609375,
+          "correct": 118,
+          "test_count": 256,
+          "validation_accuracy": 0.546875,
+          "mse": 1.0013395714845799,
+          "alpha": 100.0
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 31,
+      "model": "leaky",
+      "observation": "passive",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.059340814591881674,
+          "alpha": 1e-05
+        },
+        "parity": {
+          "accuracy": 0.5,
+          "correct": 128,
+          "test_count": 256,
+          "validation_accuracy": 0.53125,
+          "mse": 1.0012466591582165,
+          "alpha": 1.0
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 16
+    },
+    {
+      "seed": 31,
+      "model": "leaky",
+      "observation": "passive",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.06217746969010432,
+          "alpha": 1e-05
+        },
+        "parity": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.1102937755651717,
+          "alpha": 1e-05
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 16
+    },
+    {
+      "seed": 31,
+      "model": "delay_pca",
+      "observation": "passive",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.05604465460379604,
+          "alpha": 1e-05
+        },
+        "parity": {
+          "accuracy": 0.484375,
+          "correct": 124,
+          "test_count": 256,
+          "validation_accuracy": 0.484375,
+          "mse": 1.0000681334299504,
+          "alpha": 100.0
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 31,
+      "model": "delay_pca",
+      "observation": "passive",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.99609375,
+          "correct": 255,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.11687282635348945,
+          "alpha": 0.1
+        },
+        "parity": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 0.9921875,
+          "mse": 0.16693370261295587,
+          "alpha": 0.1
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 31,
+      "model": "erased",
+      "observation": "probed",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.49609375,
+          "correct": 127,
+          "test_count": 256,
+          "validation_accuracy": 0.5625,
+          "mse": 1.0460494357124122,
+          "alpha": 0.1
+        },
+        "parity": {
+          "accuracy": 0.48046875,
+          "correct": 123,
+          "test_count": 256,
+          "validation_accuracy": 0.5234375,
+          "mse": 1.0586347068746704,
+          "alpha": 0.1
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 31,
+      "model": "erased",
+      "observation": "probed",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.5,
+          "correct": 128,
+          "test_count": 256,
+          "validation_accuracy": 0.59375,
+          "mse": 2.159589733218035,
+          "alpha": 0.01
+        },
+        "parity": {
+          "accuracy": 0.5078125,
+          "correct": 130,
+          "test_count": 256,
+          "validation_accuracy": 0.5703125,
+          "mse": 1.0004043231639215,
+          "alpha": 100.0
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 31,
+      "model": "shuffled_labels",
+      "observation": "passive",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.77734375,
+          "correct": 199,
+          "test_count": 256,
+          "validation_accuracy": 0.546875,
+          "mse": 0.9641877807065822,
+          "alpha": 10.0
+        },
+        "parity": {
+          "accuracy": 0.4453125,
+          "correct": 114,
+          "test_count": 256,
+          "validation_accuracy": 0.5,
+          "mse": 1.0501463362835848,
+          "alpha": 0.01
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 31,
+      "model": "shuffled_labels",
+      "observation": "passive",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.64453125,
+          "correct": 165,
+          "test_count": 256,
+          "validation_accuracy": 0.5390625,
+          "mse": 0.9645081956429595,
+          "alpha": 10.0
+        },
+        "parity": {
+          "accuracy": 0.54296875,
+          "correct": 139,
+          "test_count": 256,
+          "validation_accuracy": 0.5703125,
+          "mse": 1.090476433747833,
+          "alpha": 1e-05
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 43,
+      "model": "reciprocal",
+      "observation": "passive",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.04512557623823292,
+          "alpha": 1e-05
+        },
+        "parity": {
+          "accuracy": 0.99609375,
+          "correct": 255,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.08898828172800671,
+          "alpha": 1e-05
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 43,
+      "model": "reciprocal",
+      "observation": "passive",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.00871893498206326,
+          "alpha": 1e-05
+        },
+        "parity": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.03773242550756702,
+          "alpha": 1e-05
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 43,
+      "model": "reciprocal",
+      "observation": "incremental",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.97265625,
+          "correct": 249,
+          "test_count": 256,
+          "validation_accuracy": 0.9921875,
+          "mse": 0.22628591269363643,
+          "alpha": 0.001
+        },
+        "parity": {
+          "accuracy": 0.8828125,
+          "correct": 226,
+          "test_count": 256,
+          "validation_accuracy": 0.8984375,
+          "mse": 0.4322154182824887,
+          "alpha": 0.001
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 43,
+      "model": "reciprocal",
+      "observation": "incremental",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.984375,
+          "correct": 252,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.11753724548326305,
+          "alpha": 0.01
+        },
+        "parity": {
+          "accuracy": 0.95703125,
+          "correct": 245,
+          "test_count": 256,
+          "validation_accuracy": 0.96875,
+          "mse": 0.2357982049851108,
+          "alpha": 0.01
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 43,
+      "model": "driven",
+      "observation": "passive",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.045085904564386395,
+          "alpha": 1e-05
+        },
+        "parity": {
+          "accuracy": 0.99609375,
+          "correct": 255,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.08897132899711208,
+          "alpha": 1e-05
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 43,
+      "model": "driven",
+      "observation": "passive",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.008745889178068398,
+          "alpha": 1e-05
+        },
+        "parity": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.037749381980114516,
+          "alpha": 1e-05
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 43,
+      "model": "driven",
+      "observation": "incremental",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.97265625,
+          "correct": 249,
+          "test_count": 256,
+          "validation_accuracy": 0.9921875,
+          "mse": 0.22708023943057518,
+          "alpha": 0.001
+        },
+        "parity": {
+          "accuracy": 0.8828125,
+          "correct": 226,
+          "test_count": 256,
+          "validation_accuracy": 0.8984375,
+          "mse": 0.4328715244155246,
+          "alpha": 0.001
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 43,
+      "model": "driven",
+      "observation": "incremental",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.984375,
+          "correct": 252,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.11786567268121617,
+          "alpha": 0.01
+        },
+        "parity": {
+          "accuracy": 0.95703125,
+          "correct": 245,
+          "test_count": 256,
+          "validation_accuracy": 0.96875,
+          "mse": 0.23591545087365667,
+          "alpha": 0.01
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 43,
+      "model": "uncoupled",
+      "observation": "passive",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.045181499227391106,
+          "alpha": 1e-05
+        },
+        "parity": {
+          "accuracy": 0.99609375,
+          "correct": 255,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.08948092629522167,
+          "alpha": 1e-05
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 43,
+      "model": "uncoupled",
+      "observation": "passive",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.008863501064205748,
+          "alpha": 1e-05
+        },
+        "parity": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.03752215033789638,
+          "alpha": 1e-05
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 43,
+      "model": "uncoupled",
+      "observation": "incremental",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.97265625,
+          "correct": 249,
+          "test_count": 256,
+          "validation_accuracy": 0.9921875,
+          "mse": 0.2260088623271754,
+          "alpha": 0.001
+        },
+        "parity": {
+          "accuracy": 0.8828125,
+          "correct": 226,
+          "test_count": 256,
+          "validation_accuracy": 0.8984375,
+          "mse": 0.43133234468861703,
+          "alpha": 0.001
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 43,
+      "model": "uncoupled",
+      "observation": "incremental",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.984375,
+          "correct": 252,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.11742977217756745,
+          "alpha": 0.01
+        },
+        "parity": {
+          "accuracy": 0.96875,
+          "correct": 248,
+          "test_count": 256,
+          "validation_accuracy": 0.9609375,
+          "mse": 0.1817254561435828,
+          "alpha": 1.0
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 43,
+      "model": "linear",
+      "observation": "passive",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.06475741725888094,
+          "alpha": 1e-05
+        },
+        "parity": {
+          "accuracy": 0.4921875,
+          "correct": 126,
+          "test_count": 256,
+          "validation_accuracy": 0.5078125,
+          "mse": 1.032727369010329,
+          "alpha": 0.1
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 43,
+      "model": "linear",
+      "observation": "passive",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.07567630802888885,
+          "alpha": 1e-05
+        },
+        "parity": {
+          "accuracy": 0.9609375,
+          "correct": 246,
+          "test_count": 256,
+          "validation_accuracy": 0.9609375,
+          "mse": 0.26214912885164826,
+          "alpha": 1e-05
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 43,
+      "model": "linear",
+      "observation": "incremental",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.5234375,
+          "correct": 134,
+          "test_count": 256,
+          "validation_accuracy": 0.578125,
+          "mse": 1.0050396596161624,
+          "alpha": 0.1
+        },
+        "parity": {
+          "accuracy": 0.4921875,
+          "correct": 126,
+          "test_count": 256,
+          "validation_accuracy": 0.453125,
+          "mse": 1.0178817402603906,
+          "alpha": 1.0
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 43,
+      "model": "linear",
+      "observation": "incremental",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.51171875,
+          "correct": 131,
+          "test_count": 256,
+          "validation_accuracy": 0.5859375,
+          "mse": 3.2639633480005696,
+          "alpha": 0.001
+        },
+        "parity": {
+          "accuracy": 0.52734375,
+          "correct": 135,
+          "test_count": 256,
+          "validation_accuracy": 0.5,
+          "mse": 0.9983746803900216,
+          "alpha": 100.0
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 43,
+      "model": "leaky",
+      "observation": "passive",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.059465620758917453,
+          "alpha": 1e-05
+        },
+        "parity": {
+          "accuracy": 0.50390625,
+          "correct": 129,
+          "test_count": 256,
+          "validation_accuracy": 0.515625,
+          "mse": 1.0008483711177885,
+          "alpha": 1.0
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 16
+    },
+    {
+      "seed": 43,
+      "model": "leaky",
+      "observation": "passive",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.06673781474078491,
+          "alpha": 0.001
+        },
+        "parity": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.11334621233866277,
+          "alpha": 0.0001
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 16
+    },
+    {
+      "seed": 43,
+      "model": "delay_pca",
+      "observation": "passive",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.055359903508665674,
+          "alpha": 1e-05
+        },
+        "parity": {
+          "accuracy": 0.5234375,
+          "correct": 134,
+          "test_count": 256,
+          "validation_accuracy": 0.5859375,
+          "mse": 0.9882620750985504,
+          "alpha": 1e-05
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 43,
+      "model": "delay_pca",
+      "observation": "passive",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.99609375,
+          "correct": 255,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.0981425059037663,
+          "alpha": 0.1
+        },
+        "parity": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.1672904045881774,
+          "alpha": 0.1
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 43,
+      "model": "erased",
+      "observation": "probed",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.546875,
+          "correct": 140,
+          "test_count": 256,
+          "validation_accuracy": 0.53125,
+          "mse": 1.0226009492707975,
+          "alpha": 0.01
+        },
+        "parity": {
+          "accuracy": 0.46484375,
+          "correct": 119,
+          "test_count": 256,
+          "validation_accuracy": 0.46875,
+          "mse": 1.024389287011056,
+          "alpha": 1.0
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 43,
+      "model": "erased",
+      "observation": "probed",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.52734375,
+          "correct": 135,
+          "test_count": 256,
+          "validation_accuracy": 0.4921875,
+          "mse": 2.099549509737306,
+          "alpha": 0.001
+        },
+        "parity": {
+          "accuracy": 0.48046875,
+          "correct": 123,
+          "test_count": 256,
+          "validation_accuracy": 0.484375,
+          "mse": 2.3051490339963663,
+          "alpha": 0.01
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 43,
+      "model": "shuffled_labels",
+      "observation": "passive",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.27734375,
+          "correct": 71,
+          "test_count": 256,
+          "validation_accuracy": 0.5078125,
+          "mse": 1.002836283643177,
+          "alpha": 100.0
+        },
+        "parity": {
+          "accuracy": 0.3828125,
+          "correct": 98,
+          "test_count": 256,
+          "validation_accuracy": 0.5234375,
+          "mse": 1.0108566531106218,
+          "alpha": 100.0
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 43,
+      "model": "shuffled_labels",
+      "observation": "passive",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.3046875,
+          "correct": 78,
+          "test_count": 256,
+          "validation_accuracy": 0.5078125,
+          "mse": 1.0314012689467793,
+          "alpha": 100.0
+        },
+        "parity": {
+          "accuracy": 0.0234375,
+          "correct": 6,
+          "test_count": 256,
+          "validation_accuracy": 0.5078125,
+          "mse": 1.2971637434212324,
+          "alpha": 10.0
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 59,
+      "model": "reciprocal",
+      "observation": "passive",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.03699758603704742,
+          "alpha": 1e-05
+        },
+        "parity": {
+          "accuracy": 0.98828125,
+          "correct": 253,
+          "test_count": 256,
+          "validation_accuracy": 0.9921875,
+          "mse": 0.09303302002173135,
+          "alpha": 1e-05
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 59,
+      "model": "reciprocal",
+      "observation": "passive",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.013042530783237085,
+          "alpha": 0.0001
+        },
+        "parity": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.035458115688770345,
+          "alpha": 1e-05
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 59,
+      "model": "reciprocal",
+      "observation": "incremental",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.96484375,
+          "correct": 247,
+          "test_count": 256,
+          "validation_accuracy": 0.96875,
+          "mse": 0.1816569900789851,
+          "alpha": 0.01
+        },
+        "parity": {
+          "accuracy": 0.86328125,
+          "correct": 221,
+          "test_count": 256,
+          "validation_accuracy": 0.8203125,
+          "mse": 0.4636547067624259,
+          "alpha": 0.1
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 59,
+      "model": "reciprocal",
+      "observation": "incremental",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.05847889834609533,
+          "alpha": 0.01
+        },
+        "parity": {
+          "accuracy": 0.99609375,
+          "correct": 255,
+          "test_count": 256,
+          "validation_accuracy": 0.9765625,
+          "mse": 0.1315102871374247,
+          "alpha": 1.0
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 59,
+      "model": "driven",
+      "observation": "passive",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.03699978219676078,
+          "alpha": 1e-05
+        },
+        "parity": {
+          "accuracy": 0.98828125,
+          "correct": 253,
+          "test_count": 256,
+          "validation_accuracy": 0.9921875,
+          "mse": 0.09298460897545982,
+          "alpha": 1e-05
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 59,
+      "model": "driven",
+      "observation": "passive",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.01303246153282939,
+          "alpha": 0.0001
+        },
+        "parity": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.035453492276449776,
+          "alpha": 1e-05
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 59,
+      "model": "driven",
+      "observation": "incremental",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.96484375,
+          "correct": 247,
+          "test_count": 256,
+          "validation_accuracy": 0.96875,
+          "mse": 0.18175503504598775,
+          "alpha": 0.01
+        },
+        "parity": {
+          "accuracy": 0.86328125,
+          "correct": 221,
+          "test_count": 256,
+          "validation_accuracy": 0.8203125,
+          "mse": 0.4639397980032389,
+          "alpha": 0.1
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 59,
+      "model": "driven",
+      "observation": "incremental",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.05848766102968321,
+          "alpha": 0.01
+        },
+        "parity": {
+          "accuracy": 0.99609375,
+          "correct": 255,
+          "test_count": 256,
+          "validation_accuracy": 0.9765625,
+          "mse": 0.13153268472980612,
+          "alpha": 1.0
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 59,
+      "model": "uncoupled",
+      "observation": "passive",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.03782271739860382,
+          "alpha": 1e-05
+        },
+        "parity": {
+          "accuracy": 0.98828125,
+          "correct": 253,
+          "test_count": 256,
+          "validation_accuracy": 0.9921875,
+          "mse": 0.0923733604733492,
+          "alpha": 1e-05
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 59,
+      "model": "uncoupled",
+      "observation": "passive",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.012312820592035513,
+          "alpha": 0.0001
+        },
+        "parity": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.03394492413104984,
+          "alpha": 1e-05
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 59,
+      "model": "uncoupled",
+      "observation": "incremental",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.96875,
+          "correct": 248,
+          "test_count": 256,
+          "validation_accuracy": 0.96875,
+          "mse": 0.18078375588548123,
+          "alpha": 0.01
+        },
+        "parity": {
+          "accuracy": 0.8671875,
+          "correct": 222,
+          "test_count": 256,
+          "validation_accuracy": 0.8203125,
+          "mse": 0.46617839171992004,
+          "alpha": 0.1
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 59,
+      "model": "uncoupled",
+      "observation": "incremental",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.0580221523317274,
+          "alpha": 0.01
+        },
+        "parity": {
+          "accuracy": 0.99609375,
+          "correct": 255,
+          "test_count": 256,
+          "validation_accuracy": 0.9765625,
+          "mse": 0.13142679872028692,
+          "alpha": 1.0
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 59,
+      "model": "linear",
+      "observation": "passive",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.05578682425718852,
+          "alpha": 0.0001
+        },
+        "parity": {
+          "accuracy": 0.5,
+          "correct": 128,
+          "test_count": 256,
+          "validation_accuracy": 0.4921875,
+          "mse": 1.0109050138254718,
+          "alpha": 1.0
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 59,
+      "model": "linear",
+      "observation": "passive",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.08584588840721041,
+          "alpha": 1e-05
+        },
+        "parity": {
+          "accuracy": 0.9609375,
+          "correct": 246,
+          "test_count": 256,
+          "validation_accuracy": 0.96875,
+          "mse": 0.2699924448571632,
+          "alpha": 0.0001
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 59,
+      "model": "linear",
+      "observation": "incremental",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.57421875,
+          "correct": 147,
+          "test_count": 256,
+          "validation_accuracy": 0.5703125,
+          "mse": 1.0002530886603869,
+          "alpha": 0.01
+        },
+        "parity": {
+          "accuracy": 0.5078125,
+          "correct": 130,
+          "test_count": 256,
+          "validation_accuracy": 0.4765625,
+          "mse": 1.0483319322245133,
+          "alpha": 0.1
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 59,
+      "model": "linear",
+      "observation": "incremental",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.4921875,
+          "correct": 126,
+          "test_count": 256,
+          "validation_accuracy": 0.5703125,
+          "mse": 2.1053516170631745,
+          "alpha": 0.01
+        },
+        "parity": {
+          "accuracy": 0.5078125,
+          "correct": 130,
+          "test_count": 256,
+          "validation_accuracy": 0.53125,
+          "mse": 1.0741943043387319,
+          "alpha": 1.0
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 59,
+      "model": "leaky",
+      "observation": "passive",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.04994864850202195,
+          "alpha": 1e-05
+        },
+        "parity": {
+          "accuracy": 0.49609375,
+          "correct": 127,
+          "test_count": 256,
+          "validation_accuracy": 0.5,
+          "mse": 0.9997259990303494,
+          "alpha": 1.0
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 16
+    },
+    {
+      "seed": 59,
+      "model": "leaky",
+      "observation": "passive",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.052145610073401724,
+          "alpha": 1e-05
+        },
+        "parity": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.10507342580315492,
+          "alpha": 1e-05
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 16
+    },
+    {
+      "seed": 59,
+      "model": "delay_pca",
+      "observation": "passive",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.0459945027155194,
+          "alpha": 0.01
+        },
+        "parity": {
+          "accuracy": 0.5,
+          "correct": 128,
+          "test_count": 256,
+          "validation_accuracy": 0.515625,
+          "mse": 1.0022632904138775,
+          "alpha": 10.0
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 59,
+      "model": "delay_pca",
+      "observation": "passive",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.0823500702933126,
+          "alpha": 0.1
+        },
+        "parity": {
+          "accuracy": 1.0,
+          "correct": 256,
+          "test_count": 256,
+          "validation_accuracy": 1.0,
+          "mse": 0.1406730364919831,
+          "alpha": 0.1
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 59,
+      "model": "erased",
+      "observation": "probed",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.5390625,
+          "correct": 138,
+          "test_count": 256,
+          "validation_accuracy": 0.515625,
+          "mse": 1.0061372657450078,
+          "alpha": 0.01
+        },
+        "parity": {
+          "accuracy": 0.50390625,
+          "correct": 129,
+          "test_count": 256,
+          "validation_accuracy": 0.5078125,
+          "mse": 0.9989976568600698,
+          "alpha": 10.0
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 59,
+      "model": "erased",
+      "observation": "probed",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.55078125,
+          "correct": 141,
+          "test_count": 256,
+          "validation_accuracy": 0.5625,
+          "mse": 2.9628487109533173,
+          "alpha": 0.001
+        },
+        "parity": {
+          "accuracy": 0.48828125,
+          "correct": 125,
+          "test_count": 256,
+          "validation_accuracy": 0.5390625,
+          "mse": 1.0036670921926965,
+          "alpha": 10.0
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 59,
+      "model": "shuffled_labels",
+      "observation": "passive",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.671875,
+          "correct": 172,
+          "test_count": 256,
+          "validation_accuracy": 0.578125,
+          "mse": 0.9217974106755715,
+          "alpha": 0.1
+        },
+        "parity": {
+          "accuracy": 0.39453125,
+          "correct": 101,
+          "test_count": 256,
+          "validation_accuracy": 0.546875,
+          "mse": 1.1064724723456991,
+          "alpha": 0.0001
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 16,
+      "retained_real_state": 2318
+    },
+    {
+      "seed": 59,
+      "model": "shuffled_labels",
+      "observation": "passive",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "accuracy": 0.5625,
+          "correct": 144,
+          "test_count": 256,
+          "validation_accuracy": 0.578125,
+          "mse": 0.987716599923188,
+          "alpha": 100.0
+        },
+        "parity": {
+          "accuracy": 0.40234375,
+          "correct": 103,
+          "test_count": 256,
+          "validation_accuracy": 0.5625,
+          "mse": 1.0984774378386424,
+          "alpha": 0.1
+        }
+      },
+      "observed_features": 16,
+      "reader_features": 152,
+      "retained_real_state": 2318
+    }
+  ],
+  "summary": [
+    {
+      "model": "delay_pca",
+      "observation": "passive",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "parity": {
+          "mean": 0.50390625,
+          "min": 0.484375,
+          "max": 0.5234375
+        }
+      }
+    },
+    {
+      "model": "delay_pca",
+      "observation": "passive",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "mean": 0.9984375,
+          "min": 0.99609375,
+          "max": 1.0
+        },
+        "parity": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        }
+      }
+    },
+    {
+      "model": "driven",
+      "observation": "incremental",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "mean": 0.94765625,
+          "min": 0.8828125,
+          "max": 0.97265625
+        },
+        "parity": {
+          "mean": 0.88125,
+          "min": 0.83984375,
+          "max": 0.92578125
+        }
+      }
+    },
+    {
+      "model": "driven",
+      "observation": "incremental",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "mean": 0.98046875,
+          "min": 0.91796875,
+          "max": 1.0
+        },
+        "parity": {
+          "mean": 0.9765625,
+          "min": 0.95703125,
+          "max": 0.99609375
+        }
+      }
+    },
+    {
+      "model": "driven",
+      "observation": "passive",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "parity": {
+          "mean": 0.9953125,
+          "min": 0.98828125,
+          "max": 1.0
+        }
+      }
+    },
+    {
+      "model": "driven",
+      "observation": "passive",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "parity": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        }
+      }
+    },
+    {
+      "model": "erased",
+      "observation": "probed",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "mean": 0.50703125,
+          "min": 0.45703125,
+          "max": 0.546875
+        },
+        "parity": {
+          "mean": 0.50390625,
+          "min": 0.46484375,
+          "max": 0.5625
+        }
+      }
+    },
+    {
+      "model": "erased",
+      "observation": "probed",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "mean": 0.49609375,
+          "min": 0.41796875,
+          "max": 0.55078125
+        },
+        "parity": {
+          "mean": 0.51484375,
+          "min": 0.48046875,
+          "max": 0.5703125
+        }
+      }
+    },
+    {
+      "model": "leaky",
+      "observation": "passive",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "parity": {
+          "mean": 0.49921875,
+          "min": 0.49609375,
+          "max": 0.50390625
+        }
+      }
+    },
+    {
+      "model": "leaky",
+      "observation": "passive",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "parity": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        }
+      }
+    },
+    {
+      "model": "linear",
+      "observation": "incremental",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "mean": 0.52421875,
+          "min": 0.4609375,
+          "max": 0.57421875
+        },
+        "parity": {
+          "mean": 0.51484375,
+          "min": 0.48828125,
+          "max": 0.546875
+        }
+      }
+    },
+    {
+      "model": "linear",
+      "observation": "incremental",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "mean": 0.509375,
+          "min": 0.48828125,
+          "max": 0.5390625
+        },
+        "parity": {
+          "mean": 0.49609375,
+          "min": 0.4609375,
+          "max": 0.52734375
+        }
+      }
+    },
+    {
+      "model": "linear",
+      "observation": "passive",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "parity": {
+          "mean": 0.50546875,
+          "min": 0.4921875,
+          "max": 0.53515625
+        }
+      }
+    },
+    {
+      "model": "linear",
+      "observation": "passive",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "parity": {
+          "mean": 0.96796875,
+          "min": 0.9609375,
+          "max": 0.98046875
+        }
+      }
+    },
+    {
+      "model": "reciprocal",
+      "observation": "incremental",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "mean": 0.9484375,
+          "min": 0.87890625,
+          "max": 0.9765625
+        },
+        "parity": {
+          "mean": 0.88046875,
+          "min": 0.83984375,
+          "max": 0.92578125
+        }
+      }
+    },
+    {
+      "model": "reciprocal",
+      "observation": "incremental",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "mean": 0.98046875,
+          "min": 0.91796875,
+          "max": 1.0
+        },
+        "parity": {
+          "mean": 0.9765625,
+          "min": 0.95703125,
+          "max": 0.99609375
+        }
+      }
+    },
+    {
+      "model": "reciprocal",
+      "observation": "passive",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "parity": {
+          "mean": 0.9953125,
+          "min": 0.98828125,
+          "max": 1.0
+        }
+      }
+    },
+    {
+      "model": "reciprocal",
+      "observation": "passive",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "parity": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        }
+      }
+    },
+    {
+      "model": "shuffled_labels",
+      "observation": "passive",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "mean": 0.61875,
+          "min": 0.27734375,
+          "max": 0.94140625
+        },
+        "parity": {
+          "mean": 0.453125,
+          "min": 0.3828125,
+          "max": 0.5625
+        }
+      }
+    },
+    {
+      "model": "shuffled_labels",
+      "observation": "passive",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "mean": 0.5703125,
+          "min": 0.3046875,
+          "max": 0.82421875
+        },
+        "parity": {
+          "mean": 0.47109375,
+          "min": 0.0234375,
+          "max": 0.94921875
+        }
+      }
+    },
+    {
+      "model": "uncoupled",
+      "observation": "incremental",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "mean": 0.95078125,
+          "min": 0.88671875,
+          "max": 0.9765625
+        },
+        "parity": {
+          "mean": 0.8828125,
+          "min": 0.83203125,
+          "max": 0.92578125
+        }
+      }
+    },
+    {
+      "model": "uncoupled",
+      "observation": "incremental",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "mean": 0.98046875,
+          "min": 0.91796875,
+          "max": 1.0
+        },
+        "parity": {
+          "mean": 0.97890625,
+          "min": 0.96484375,
+          "max": 0.99609375
+        }
+      }
+    },
+    {
+      "model": "uncoupled",
+      "observation": "passive",
+      "family": "linear",
+      "tasks": {
+        "first_sign": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "parity": {
+          "mean": 0.9953125,
+          "min": 0.98828125,
+          "max": 1.0
+        }
+      }
+    },
+    {
+      "model": "uncoupled",
+      "observation": "passive",
+      "family": "quadratic",
+      "tasks": {
+        "first_sign": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "parity": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        }
+      }
+    }
+  ],
+  "quadratic_seed_differences_vs_best_alternative": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "measurement_noise_std": 0.001,
+  "field_real_state": 2318,
+  "reader_budget": {
+    "observations_or_projected_features": 16,
+    "linear": 16,
+    "quadratic": 152
+  }
+}
